@@ -1,8 +1,10 @@
 <template>
-    <section class="icons">
-        <div v-for="(link,i) in linksImage" :kei="i" class="my-container icon">
-            <img :src="getImagePath(`../../assets/img/${link.url}`)" class="img-icon">
-            <a href="#">{{link.text}}</a>
+    <section class="icons-wrap">
+        <div class="icons">
+            <div v-for="(link,i) in linksImage" :key="i" class="my-container icon">
+                <img :src="getImagePath(`../../assets/img/${link.url}`)" class="img-icon">
+                <a href="#">{{link.text}}</a>
+            </div>
         </div>
     </section>
 </template>
@@ -47,10 +49,15 @@
 @use '../../assets/styles/partials/variables' as *;
 @use '../../assets/styles/partials/mixins' as *;
 
-    .icons{
+    .icons-wrap{
         background-color: $blue;
-        @include dflex();
         padding: 1rem;
+        .icons{
+            margin: auto;
+            width: 80%;
+            @include dflex();
+        }
+        
         .icon{
             @include dflex();
             .img-icon{
@@ -62,6 +69,9 @@
                 font-size: 1.1rem;
                 text-transform: uppercase;
             }
+        }
+        .icon:nth-child(4) .img-icon{
+            width: 25px;
         }
     }
 </style>

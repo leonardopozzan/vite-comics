@@ -80,7 +80,6 @@
         }
         .links{
             @include dflex();
-            list-style: none;
             li{
                 line-height: 97px;
                 padding: 0 0.7rem;

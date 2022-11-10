@@ -1,14 +1,18 @@
 <template>
     <footer>
         <SectionIcons />
+        <SectionLinks />
+        <SectionSocial />
     </footer>
 </template>
 
 <script>
 import SectionIcons from './footerComponents/SectionIcons.vue';
+import SectionLinks from './footerComponents/SectionLinks.vue';
+import SectionSocial from './footerComponents/SectionSocial.vue';
 
     export default {
-    components: { SectionIcons }
+    components: { SectionIcons, SectionLinks, SectionSocial }
 }
 </script>
 
