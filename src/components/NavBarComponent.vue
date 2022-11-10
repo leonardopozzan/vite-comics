@@ -2,7 +2,7 @@
     <nav class="nav-bar">
         <div class="logo-img"><img src="../assets/img/favicon.ico" alt="logo"></div>
         <ul class="links">
-            <li v-for="(section,i) in sections" :key="i"><a :href="section.url" :class="{'active' : section.active}">{{section.text}}</a></li>
+            <li v-for="(section,i) in sections" :key="i" :class="{'active' : section.active}"><a :href="section.url">{{section.text}}</a></li>
         </ul>
     </nav>
 </template>
