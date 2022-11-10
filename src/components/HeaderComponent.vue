@@ -1,19 +1,23 @@
 <template>
     <header>
-        sono header
+        <NavBarComponent />
     </header>
 </template>
 
 <script>
-export default {
+import NavBarComponent from './NavBarComponent.vue';
 
+export default {
+    data() {
+    },
+    components: { NavBarComponent }
 }
 </script>
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
     header {
-        background-color: $blue;
+        background-color: $white;
     }
 
 </style>
