@@ -1,6 +1,6 @@
 <template>
-    <nav class="nav-bar">
-        <div class="logo-img"><img src="../assets/img/favicon.ico" alt="logo"></div>
+    <nav class="nav-bar my-container">
+        <div class="logo-img"><img src="../assets/img/dc-logo.png" alt="logo"></div>
         <ul class="links">
             <li v-for="(section,i) in sections" :key="i" :class="{'active' : section.active}"><a :href="section.url">{{section.text}}</a></li>
         </ul>
@@ -73,10 +73,11 @@
 @use '../assets/styles/partials/variables' as *;
 @use '../assets/styles/partials/mixins' as *;
     .nav-bar{
-        width: 95%;
-        margin: auto;
         height: 100px;
         @include dflex('between');
+        .logo-img{
+            width: 90px
+        }
         .links{
             @include dflex();
             list-style: none;
@@ -84,12 +85,12 @@
                 line-height: 97px;
                 padding: 0 0.7rem;
                 border-bottom: 3px solid transparent;
+                transition: 0.3s;
+                text-transform: uppercase;
                 &.active,
                 &:hover{
                     border-bottom: 3px solid $blue;
-                }
-                a{
-                    text-decoration: none;
+                    cursor: pointer;
                 }
             }
         }
