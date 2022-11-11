@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+$fa-font-path : "./partials/webfonts";
+@import '/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '/node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import '/node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '/node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
 
 * {
     padding: 0;
