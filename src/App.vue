@@ -14,6 +14,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+@use './assets/styles/partials/mixins' as *;
+@use './assets/styles/partials/variables' as *;
 
 </style>

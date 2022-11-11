@@ -1,6 +1,6 @@
 <template>
     <nav class="nav-bar my-container">
-        <div class="logo-img"><img src="../assets/img/dc-logo.png" alt="logo"></div>
+        <div class="logo-img"><img src="../../public/img/dc-logo.png" alt="logo"></div>
         <ul class="links">
             <li v-for="(section,i) in sections" :key="i" :class="{'active' : section.active}"><a :href="section.url">{{section.text}}</a></li>
         </ul>
@@ -70,8 +70,6 @@
 </script>
 
 <style lang="scss" scoped>
-@use '../assets/styles/partials/variables' as *;
-@use '../assets/styles/partials/mixins' as *;
     .nav-bar{
         height: 100px;
         @include dflex('between');
