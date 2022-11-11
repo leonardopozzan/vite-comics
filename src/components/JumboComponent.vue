@@ -18,7 +18,7 @@
 @use '../assets/styles/partials/variables' as *;
 @use '../assets/styles/partials/mixins' as *;
     .jumbo{
-        background-image: url('../../public/img/jumbotron.jpg');
+        background-image: url('/img/jumbotron.jpg');
         background-size: cover;
         height: 400px;
         position: relative;
@@ -28,8 +28,7 @@
             transform: translate( 0, 50%);
             padding: 0.8rem;
             background-color: $blue;
-            color: $white;
-            text-transform: uppercase;
+            @include myText(1rem,bold);
         }
     }
 </style>

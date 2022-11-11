@@ -50,9 +50,7 @@ import {linksComics,linksShop,linksDc,linksSites} from '../../data/data'
     .links-footer{
         background-image: url('/img/footer-bg.jpg');
         background-size: cover;
-        background-position: center;
-        color: $white;
-        
+        background-position: center;        
         .links-wrap{
             @include dflex('between');
             height: 400px;
@@ -62,9 +60,7 @@ import {linksComics,linksShop,linksDc,linksSites} from '../../data/data'
                 .link{
                     padding: 1rem 1rem 1rem 0;
                     .title{
-                        font-size: 1.5rem;
-                        text-transform: uppercase;
-                        font-weight: bold;
+                        @include myText(1.5rem,bold);
                         display: inline-block;
                         padding: 0.8rem 0;
                     }

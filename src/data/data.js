@@ -267,5 +267,26 @@ const linksSites = [
       active: false,
   },
 ]
-
-export {mainComics,sections,linksComics,linksShop,linksDc,linksSites}
+const linksImage = [
+    {
+        text: 'digital comics',
+        url: 'buy-comics-digital-comics.png'
+    },
+    {
+        text: 'dc merchandise',
+        url: 'buy-comics-merchandise.png'
+    },
+    {
+        text: 'subscription',
+        url: 'buy-comics-subscriptions.png'
+    },
+    {
+        text: 'comic shop locator',
+        url: 'buy-comics-shop-locator.png'
+    },
+    {
+        text: 'dc power visa',
+        url: 'buy-dc-power-visa.svg'
+    }
+]
+export {mainComics,sections,linksComics,linksShop,linksDc,linksSites, linksImage}

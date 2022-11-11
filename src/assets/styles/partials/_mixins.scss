@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 @mixin dflex($option : 'center'){
     display: flex;
     align-items: center;
@@ -7,4 +9,10 @@
     @else if ($option == 'between'){
         justify-content: space-between;
     }
+}
+@mixin myText($size : 1rem,$weight : normal){
+    color: $white;
+    font-size: $size;
+    font-weight: $weight;
+    text-transform: uppercase;
 }

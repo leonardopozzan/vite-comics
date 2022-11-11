@@ -31,9 +31,7 @@
             margin-bottom: 1rem;
         }
         .title{
-            color: $white;
-            text-transform: uppercase;
-            font-size: 0.9rem;
+            @include myText(0.9rem);
         }
     }
 </style>

@@ -4,11 +4,7 @@
             <button>sign-up now</button>
             <div class="social">
                 <span>follow us</span>
-                <a href="#"><img src="/img/footer-facebook.png" alt=""></a>
-                <a href="#"><img src="/img/footer-twitter.png" alt=""></a>
-                <a href="#"><img src="/img/footer-youtube.png" alt=""></a>
-                <a href="#"><img src="/img/footer-pinterest.png" alt=""></a>
-                <a href="#"><img src="/img/footer-periscope.png" alt=""></a>
+                <a href="#" v-for="(path, i) in social" :key="i"><img :src="`/img/${path}`" alt=""></a>
             </div>
         </div>
     </section>
@@ -18,7 +14,13 @@
     export default {
         data(){
             return{
-                
+                social : [
+                'footer-facebook.png',
+                'footer-twitter.png',
+                'footer-youtube.png',
+                'footer-pinterest.png',
+                'footer-periscope.png'
+                ]
             }
         }
     }

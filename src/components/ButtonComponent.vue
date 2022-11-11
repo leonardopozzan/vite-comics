@@ -21,11 +21,9 @@
     text-align: center;
     button{
         background-color: $blue;
+        @include myText(1.1rem,bold);
         padding: 0.5rem 2.5rem;
-        color: $white;
-        font-size: 1.1rem;
-        text-transform: uppercase;
-        font-weight: bold;
+        cursor: pointer;
     }
 }
 </style>
