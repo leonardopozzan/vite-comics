@@ -25,7 +25,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="img-box"><img src="../../assets/img/dc-logo-bg.png" alt=""></div>
+            <div class="img-box"><img src="/img/dc-logo-bg.png" alt=""></div>
         </div>
     </section>
 </template>
@@ -186,7 +186,7 @@
 @use '../../assets/styles/partials/variables' as *;
 @use '../../assets/styles/partials/mixins' as *;
     .links-footer{
-        background-image: url('../../assets/img/footer-bg.jpg');
+        background-image: url('/img/footer-bg.jpg');
         background-size: cover;
         background-position: center;
         color: $white;

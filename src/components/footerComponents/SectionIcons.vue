@@ -2,7 +2,7 @@
     <section class="icons-wrap">
         <div class="icons">
             <div v-for="(link,i) in linksImage" :key="i" class="my-container icon">
-                <img :src="getImagePath(`../../assets/img/${link.url}`)" class="img-icon">
+                <img :src="`img/${link.url}`" class="img-icon">
                 <a href="#">{{link.text}}</a>
             </div>
         </div>
