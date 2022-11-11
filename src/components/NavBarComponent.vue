@@ -1,6 +1,6 @@
 <template>
     <nav class="nav-bar my-container">
-        <div class="logo-img"><img src="../../public/img/dc-logo.png" alt="logo"></div>
+        <div class="logo-img"><img src="/img/dc-logo.png" alt="logo"></div>
         <ul class="links">
             <li v-for="(section,i) in sections" :key="i" :class="{'active' : section.active}"><a :href="section.url">{{section.text}}</a></li>
         </ul>
@@ -8,65 +8,14 @@
 </template>
 
 <script>
+import {sections} from '../data/data'
     export default {
         data(){
             return{
-                sections: [
-                    {
-                        text: "Characters",
-                        url: "#",
-                        active: false,
-                    },
-                    {
-                        text: "Comics",
-                        url: "#",
-                        active: true,
-                    },
-                    {
-                        text: "Movies",
-                        url: "#",
-                        active: false,
-                    },
-                    {
-                        text: "TV",
-                        url: "#",
-                        active: false,
-                    },
-                    {
-                        text: "Games",
-                        url: "#",
-                        active: false,
-                    },
-                    {
-                        text: "Collectibles",
-                        url: "#",
-                        active: false,
-                    },
-                    {
-                        text: "Videos",
-                        url: "#",
-                        active: false,
-                    },
-                    {
-                        text: "Fans",
-                        url: "#",
-                        active: false,
-                    },
-                    {
-                        text: "News",
-                        url: "#",
-                        active: false,
-                    },
-                    {
-                        text: "Shop",
-                        url: "#",
-                        active: false,
-                    },
-                ]
-            }
+                sections: sections
         }
-        
     }
+}
 </script>
 
 <style lang="scss" scoped>

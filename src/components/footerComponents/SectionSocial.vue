@@ -31,7 +31,7 @@
     .contacts-wrap{
         background-color: $dark-grey;
         .contacts{
-            padding: 1.2rem;
+            padding: 1.2rem 0;
             @include dflex('between');
             .social{
                 &>*{
