@@ -34,6 +34,7 @@
         background-color: white;
         border: 4px solid $dark-dc;
         perspective: 1000px;
+        border-radius: 1rem;
         .flip-card-inner{
             position: relative;
             width: 100%;

@@ -27,5 +27,6 @@ import { mainComics } from '../data/data';
         display: flex;
         flex-wrap: wrap;
         margin: 0 -1rem;
+        padding-bottom: 1rem;
     }
 </style>
