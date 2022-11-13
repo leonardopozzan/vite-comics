@@ -16,11 +16,6 @@ import {linksImage} from '../../data/data'
             return{
                 linksImage:linksImage
             }
-        },
-        methods: {
-            getImagePath(imgPath){
-                return new URL(imgPath, import.meta.url).href;
-            }
         }
     }
 </script>
@@ -40,13 +35,14 @@ import {linksImage} from '../../data/data'
         
         .icon{
             @include dflex();
-            margin-right: 1.5rem;
+            width: calc(100% /5);
+            padding-right: 1.5rem;
             .img-icon{
                 width: 45px;
             }
             a{
                 @include myText(0.9rem);
-                margin-left: 0.8rem;
+                padding-left: 0.8rem;
             }
         }
         .icon:nth-child(4) .img-icon{

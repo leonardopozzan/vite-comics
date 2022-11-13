@@ -31,7 +31,7 @@
             margin-bottom: 1rem;
         }
         .title{
-            @include myText(0.9rem);
+            @include myText(0.9rem); 
         }
     }
 </style>
