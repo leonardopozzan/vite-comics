@@ -1,7 +1,7 @@
 <template>
     <div class="my-container">
         <div class="cards">
-            <CardComponent v-for="(item,i) in ComicsImage" :key="i" :obj="item"/>
+            <CardComponent v-for="(item,i) in ComicsImage" :key="i" :obj="item" :index="i" />
         </div>
     </div>
 </template>

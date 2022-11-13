@@ -68,7 +68,7 @@
                             font-family: "FontAwesome";
                             font: var(--fa-font-brands);
                             position: absolute;
-                            top: 0; left: 0;
+                            top: 3px; left: 0;
                             font-size: 2.5em;
                             height: 0;
                             overflow: hidden;
